@@ -1,0 +1,94 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for a clean look */
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6; /* Improve readability */
+}
+
+.header {
+    background-color: #fff; /* White background for header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.hero {
+    background-color: #4CAF50; /* Green background for hero section */
+    color: #fff; /* White text */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    margin-bottom: 30px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #4CAF50; /* Green background for card header */
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Green button */
+    border-color: #4CAF50;
+}
+
+.btn-primary:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    border-color: #3e8e41;
+}
+
+.footer {
+    background-color: #333; /* Dark gray background for footer */
+    color: #fff; /* White text */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5em;
+    }
+
+    .hero-text {
+        font-size: 1.2em;
+    }
+}

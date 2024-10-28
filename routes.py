@@ -8,10 +8,16 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def index():
+   
     return render_template("index.html")
 
 @main.route('/register', methods=['GET', 'POST'])
 def register():
+    """
+    This route handles user registration.
+    It displays a registration form (GET request) and processes the submitted data (POST request).
+    If the form is valid, it creates a new User object, saves it to the database, and redirects the user to the login page.
+    """
     form = RegistrationForm()
     if form.validate_on_submit():
         user = User(
@@ -30,6 +36,7 @@ def register():
 
 @main.route('/login', methods=['GET', 'POST'])
 def login():
+  
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
@@ -42,7 +49,12 @@ def login():
 
 @main.route('/user_dashboard')
 def user_dashboard():
+   
     return "Welcome to your User Dashboard!"
 
 def register_routes(app):
+    """
+    This function registers the 'main' Blueprint with the Flask app.
+    This tells Flask to use the routes defined in the 'main' Blueprint when handling requests.
+    """
     app.register_blueprint(main)
